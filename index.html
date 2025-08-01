@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the portfolio -->
+    <title>Dev Portfolio | Dark & Red</title>
+    
+    <!-- Linking to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main container for the entire page -->
+    <div class="container">
+        <!-- Navigation bar with dark background -->
+        <nav class="navbar">
+            <ul>
+                <!-- Navigation links using # for single-page navigation -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home section with hero content -->
+        <section id="home" class="section">
+            <div class="hero">
+                <h1>John <span class="highlight">Doe</span></h1>
+                <h2>Software <span class="highlight">Developer</span></h2>
+                <p>Building innovative solutions with clean code and modern technologies</p>
+            </div>
+        </section>
+
+        <!-- About section with personal introduction -->
+        <section id="about" class="section">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300" alt="Profile Picture" class="profile-img">
+                <div class="about-text">
+                    <p>I'm a passionate software developer with 5 years of experience creating web applications and solving complex problems. My journey in tech began when I built my first website at 15, and I've been hooked ever since.</p>
+                    <p>What drives me is the potential of technology to transform lives and businesses. I specialize in front-end development but enjoy full-stack challenges that push me to learn new things.</p>
+                    <a href="cv.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section listing programming languages -->
+        <section id="skills" class="section">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, Animations</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, React, Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Django, Flask, Data Science</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education section with academic background -->
+        <section id="education" class="section">
+            <h2>Education <span class="highlight">Background</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Master of Computer Science</h3>
+                    <p class="date">2020 - 2022</p>
+                    <p>Stanford University</p>
+                    <p>Specialized in Artificial Intelligence</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bachelor of Software Engineering</h3>
+                    <p class="date">2016 - 2020</p>
+                    <p>MIT</p>
+                    <p>Graduated with Honors</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests section -->
+        <section id="interests" class="section">
+            <h2>Professional <span class="highlight">Interests</span></h2>
+            <div class="interests-content">
+                <p>I'm particularly excited about:</p>
+                <ul>
+                    <li>Machine Learning applications in everyday life</li>
+                    <li>Progressive Web Apps and their potential</li>
+                    <li>Web accessibility and inclusive design</li>
+                    <li>Blockchain technology beyond cryptocurrencies</li>
+                </ul>
+                <p>When I'm not coding, I enjoy contributing to open-source projects and mentoring junior developers.</p>
+            </div>
+        </section>
+
+        <!-- Projects section showcasing work -->
+        <section id="projects" class="section">
+            <h2>Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with React and Node.js</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                    <h3>Task Management App</h3>
+                    <p>Productivity app with drag-and-drop functionality</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                    <h3>Health Tracker</h3>
+                    <p>Mobile-first health monitoring application</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section with form -->
+        <section id="contact" class="section">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer>
+            <p>&copy; 2023 John Doe. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
