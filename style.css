@@ -34,6 +34,7 @@ body {
 .navbar {
   background-color: var(--darker-bg);
   padding: 20px 0;
+  margin-left: 25px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -47,7 +48,10 @@ body {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 150px;
 }
 
 .navbar ul li a{
