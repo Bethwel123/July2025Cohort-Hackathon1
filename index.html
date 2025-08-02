@@ -25,18 +25,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <!-- Adding a favicon -->
-    <link
-      rel="icon"
-      href="./images/favicon.png"
-      type="image/png"
-    />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
   </head>
   <body>
     <!-- Main container for the entire page -->
     <div class="container">
       <!-- Navigation bar with dark background -->
       <nav class="navbar">
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-links">
           <!-- Navigation links using # for single-page navigation -->
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -291,49 +293,54 @@
       </section>
 
       <!-- Education section with academic background -->
-<section id="education" class="section">
-    <h2>Education <span class="highlight">Background</span></h2>
-    <div class="timeline">
-        <div class="timeline-item">
+      <section id="education" class="section">
+        <h2>Education <span class="highlight">Background</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
             <h3>Software Engineering Certificate</h3>
             <p class="date">2024</p>
             <p>Moringa School</p>
             <p>Completed intensive full-stack development program</p>
-        </div>
-        <div class="timeline-item current">
+          </div>
+          <div class="timeline-item current">
             <h3>Software Development Program</h3>
             <p class="date">2025 - Present</p>
             <p>Power Learn Project (PLP)</p>
             <p>Currently enrolled in the July 2025 cohort</p>
             <p class="status-badge">In Progress</p>
-        </div>
+          </div>
 
-         <!-- Current Education - The Odin Project -->
-        <div class="timeline-item current">
+          <!-- Current Education - The Odin Project -->
+          <div class="timeline-item current">
             <h3>Full Stack JavaScript Path</h3>
             <p class="date">2024 - Present</p>
             <p>The Odin Project</p>
             <p>Specializing in JavaScript full-stack development</p>
             <p class="status-badge">In Progress</p>
-            <a href="https://www.theodinproject.com/" target="_blank" class="btn btn-outline">View Curriculum</a>
+            <a
+              href="https://www.theodinproject.com/"
+              target="_blank"
+              class="btn btn-outline"
+              >View Curriculum</a
+            >
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       <!-- Interests section -->
       <section id="interests" class="section">
-        <h2>Professional <span class="highlight">Interests</span></h2>
+        <h2>Personal <span class="highlight">Interests</span></h2>
         <div class="interests-content">
-          <p>I'm particularly excited about:</p>
+          <p>As I grow in my development journey, I'm passionate about:</p>
           <ul>
-            <li>Machine Learning applications in everyday life</li>
-            <li>Progressive Web Apps and their potential</li>
-            <li>Web accessibility and inclusive design</li>
-            <li>Blockchain technology beyond cryptocurrencies</li>
+            <li>Mastering JavaScript fundamentals and modern frameworks</li>
+            <li>Building responsive, user-friendly web interfaces</li>
+            <li>Learning backend development to become full-stack capable</li>
+            <li>Understanding clean code principles and best practices</li>
           </ul>
           <p>
-            When I'm not coding, I enjoy contributing to open-source projects
-            and mentoring junior developers.
+            When I'm not coding, I enjoy exploring tech communities, working on
+            small personal projects, and documenting what I learn.
           </p>
         </div>
       </section>
@@ -404,7 +411,9 @@
               <a href="https://github.com/Bethwel123" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://www.linkedin.com/in/bethwellangat044b" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/bethwellangat044b"
+                target="_blank"
                 ><i class="fab fa-linkedin"></i
               ></a>
               <a href="https://instagram.com/its_me_bethwel" target="_blank"
