@@ -35,27 +35,6 @@ url(https://bethwel-portfolio.onrender.com)
   - Optimized images
   - CSS variables for easy theming
 
-## Project Structure
-
-portfolio/
-├── index.html
-├── style.css
-├── images/
-│ ├── profile-picture.jpg
-│ ├── pythonJavascript.png
-│ ├── html-and-css.jpg
-│ ├── react-and-flask.png
-│ ├── Version-control.png
-│ ├── project-management.jpg
-│ ├── database.jpg
-│ ├── watchlist.jpg
-│ ├── task-management-system.jpg
-│ ├── Assignment-help.jpg
-│ └── favicon.png
-├── Bethwel-Resume.pdf
-└── README.md
-
-
 ## Installation
 
 No installation required! Simply open `index.html` in any modern web browser.
