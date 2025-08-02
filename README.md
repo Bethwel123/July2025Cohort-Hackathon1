@@ -2,7 +2,7 @@
 A modern, responsive portfolio website showcasing my skills, projects, and professional journey as a software developer.
 
 # URL link to my website
-url(https://bethwel-portfolio.onrender.com)
+url(https://bethwel.onrender.com)
 
 ## Features
 
