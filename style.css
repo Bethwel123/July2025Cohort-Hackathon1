@@ -33,8 +33,7 @@ body {
 /* Navigation styles */
 .navbar {
   background-color: var(--darker-bg);
-  padding: 20px 0;
-  margin-left: 25px;
+  padding: 20px;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -42,32 +41,47 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name-logo {
+  font-family: "Akronim", sans-serif;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-right: auto;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius);
+  padding: 0 10px;
+}
+
+.name-logo:hover {
+  color: var(--highlight);
+  background-color: rgba(255, 51, 51, 0.1);
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 0;
-  padding-left: 150px;
+  padding: 0;
+  gap: 20px;
 }
 
-.navbar ul li a{
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border-radius: var(--border-radius);
-    display: block;
+.navbar ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius);
+  display: block;
 }
 
 .navbar ul li a:hover {
-    color: var(--highlight);
-    background-color: rgba(255, 51, 51, 0.1);
+  color: var(--highlight);
+  background-color: rgba(255, 51, 51, 0.1);
 }
 
 /* Hamburger Menu Styles */
@@ -82,63 +96,68 @@ body {
   width: 30px;
   height: 21px;
   cursor: pointer;
+
 }
 
 .hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: var(--text-color);
-    border-radius: 3px;
-    transition: all 0.3s ease;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 80%;
-        height: calc(100vh - 70px);
-        background-color: var(--darker-bg);
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        transition: all 0.5s ease;
-    }
-    
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
-    
-    .nav-links li a {
-        padding: 15px;
-        margin: 0;
-    }
-    
-    .menu-toggle:checked ~ .nav-links {
-        left: 0;
-    }
-    
-    /* Hamburger animation */
-    .menu-toggle:checked + .hamburger span:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle:checked + .hamburger span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - 70px);
+    background-color: var(--darker-bg);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links li a {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    left: 0;
+  }
+
+  /* Hamburger animation */
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .name-logo {
+    font-size: 1.5rem; /* Slightly smaller on mobile */
+  }
 }
 
 /* Section styling */
@@ -159,6 +178,7 @@ body {
 
 .highlight {
   color: var(--highlight);
+  font-family: "Akronim", sans-serif;
 }
 
 /* Particle Network Animation */
@@ -961,63 +981,63 @@ timeline-item.current h3 {
 }
 
 .study-badge {
-    display: inline-block;
-    background-color: var(--highlight);
-    color: var(--text-color);
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-top: 10px;
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--text-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 /* Odin Project styles */
 .timeline-item.odin-project {
-    border-left: 4px solid #3c873a; /* Odin's green color */
+  border-left: 4px solid #3c873a; /* Odin's green color */
 }
 
 .timeline-item.odin-project h3 {
-    color: #68a063; /* Slightly lighter green */
+  color: #68a063; /* Slightly lighter green */
 }
 
 .btn-outline {
-    display: inline-block;
-    background-color: transparent;
-    color: var(--highlight);
-    border: 1px solid var(--highlight);
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    transition: all 0.3s ease;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--highlight);
+  border: 1px solid var(--highlight);
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-    background-color: var(--highlight);
-    color: white;
+  background-color: var(--highlight);
+  color: white;
 }
 
 .status-badge {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    margin-top: 10px;
-    font-weight: 500;
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
-    }
-    
-    .timeline-item {
-        width: calc(100% - 60px);
-        margin-left: 40px !important;
-    }
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: calc(100% - 60px);
+    margin-left: 40px !important;
+  }
 }
 
 /* Interests section */
