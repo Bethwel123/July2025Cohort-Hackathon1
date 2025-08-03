@@ -112,6 +112,7 @@ body {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    z-index: 101; /* Ensure hamburger is above the other elements */
   }
 
   .nav-links {
@@ -125,6 +126,9 @@ body {
     align-items: center;
     padding: 20px 0;
     transition: all 0.5s ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .nav-links li {
@@ -140,6 +144,8 @@ body {
 
   .menu-toggle:checked ~ .nav-links {
     left: 0;
+    opacity: 1;
+    visibility: visible;
   }
 
   /* Hamburger animation */
